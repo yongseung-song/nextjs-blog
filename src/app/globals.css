@@ -23,4 +23,8 @@ body {
     rgb(var(--background-end-rgb))
   );
   font-size: 2rem;
+  background-color: aqua;
+}
+p {
+  font-size: 3rem;
 }
