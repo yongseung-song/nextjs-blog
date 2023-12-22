@@ -37,3 +37,6 @@ next-env.d.ts
 
 # requirements
 requirements.md
+
+# vscode workspace settings
+.vscode

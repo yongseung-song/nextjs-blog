@@ -22,4 +22,6 @@ body {
     rgb(var(--background-start-rgb)),
     rgb(var(--background-end-rgb))
   );
+  font-size: 4rem;
+  background-color: black;
 }

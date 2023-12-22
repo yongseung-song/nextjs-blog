@@ -1,10 +1,10 @@
-type Children = React.ReactElement;
+type Children = React.ReactNode;
 
 const DetailPageLayout = ({ children }: { children: Children }) => {
   return (
     <div>
       <h1>hello</h1>
-      <div>{children}</div>
+      <section>{children}</section>
     </div>
   );
 };

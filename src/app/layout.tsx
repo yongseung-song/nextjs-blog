@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { IBM_Plex_Mono } from 'next/font/google';
-import './globals.css';
+import { JetBrains_Mono } from 'next/font/google';
 
-const ibmPlex = IBM_Plex_Mono({
+const jetBrainMono = JetBrains_Mono({
   subsets: ['latin'],
-  weight: ['700', '500', '300', '100'],
+  display: 'swap',
+  variable: '--font-jetbrains-mono',
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ibmPlex.className}>{children}</body>
+      <body className={`${jetBrainMono.variable}`}>
+        <header>This is Header</header>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
